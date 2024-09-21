@@ -30,11 +30,11 @@ def main():
 
 	res = Auth_ssid(user_input) 
 	if  res == VALID_SSID:
-		print(VALID_SSID)
+		sys.exit(VALID_SSID)
 	elif res == INVALID_SSID:
-		print(INVALID_SSID)
+		sys.exit(INVALID_SSID)
 	elif res == PROCESS_ERROR:
-		print(PROCESS_ERROR)
+		sys.exit(PROCESS_ERROR)
 
 
 if __name__ == "__main__":

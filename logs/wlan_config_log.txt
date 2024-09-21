@@ -1,0 +1,284 @@
+2024-09-20 10:30:04,222 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:30:04,224 - INFO - dhcpcd config object created
+2024-09-20 10:30:04,224 - INFO - validate_address() called
+2024-09-20 10:30:04,225 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:30:04,225 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:30:08,028 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:30:08,039 - INFO - check_connection() : configuration successful
+2024-09-20 10:33:06,743 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:33:06,744 - INFO - dhcpcd config object created
+2024-09-20 10:33:06,744 - INFO - validate_address() called
+2024-09-20 10:33:06,744 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:33:06,745 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:33:10,586 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:33:10,598 - INFO - check_connection() : configuration successful
+2024-09-20 10:40:41,495 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:40:41,497 - INFO - dhcpcd config object created
+2024-09-20 10:40:41,497 - INFO - validate_address() called
+2024-09-20 10:40:41,498 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:40:41,498 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:40:45,394 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:40:45,451 - INFO - check_connection() : configuration successful
+2024-09-20 10:41:59,047 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:41:59,048 - INFO - dhcpcd config object created
+2024-09-20 10:41:59,048 - INFO - validate_address() called
+2024-09-20 10:41:59,048 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:41:59,049 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:42:04,766 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:42:04,778 - INFO - check_connection() : configuration successful
+2024-09-20 10:47:05,295 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:47:05,297 - INFO - dhcpcd config object created
+2024-09-20 10:47:05,298 - INFO - validate_address() called
+2024-09-20 10:47:05,298 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:47:05,299 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:47:07,986 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:47:08,002 - INFO - check_connection() : configuration successful
+2024-09-20 10:47:31,177 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:47:31,178 - INFO - dhcpcd config object created
+2024-09-20 10:47:31,179 - INFO - validate_address() called
+2024-09-20 10:47:31,180 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:47:31,180 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:47:33,709 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:47:33,725 - INFO - check_connection() : configuration successful
+2024-09-20 10:48:34,675 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:48:34,676 - INFO - dhcpcd config object created
+2024-09-20 10:48:34,677 - INFO - validate_address() called
+2024-09-20 10:48:34,677 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:48:34,678 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:48:37,117 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:48:37,130 - INFO - check_connection() : configuration successful
+2024-09-20 10:51:39,127 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:51:39,128 - INFO - dhcpcd config object created
+2024-09-20 10:51:39,128 - INFO - validate_address() called
+2024-09-20 10:51:39,129 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:51:39,129 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:51:41,625 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:51:41,638 - INFO - check_connection() : configuration successful
+2024-09-20 10:52:32,811 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:52:32,812 - INFO - dhcpcd config object created
+2024-09-20 10:52:32,812 - INFO - validate_address() called
+2024-09-20 10:52:32,813 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:52:32,813 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:52:35,269 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:52:35,280 - INFO - check_connection() : configuration successful
+2024-09-20 10:55:28,127 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 10:55:28,128 - INFO - dhcpcd config object created
+2024-09-20 10:55:28,129 - INFO - validate_address() called
+2024-09-20 10:55:28,129 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 10:55:28,129 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 10:55:30,559 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 10:55:30,578 - INFO - check_connection() : configuration successful
+2024-09-20 11:19:43,463 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:19:43,474 - INFO - dhcpcd config object created
+2024-09-20 11:19:43,475 - INFO - validate_address() called
+2024-09-20 11:19:43,476 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:19:43,476 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:19:45,956 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:19:45,969 - INFO - check_connection() : configuration successful
+2024-09-20 11:20:05,199 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:20:05,200 - INFO - dhcpcd config object created
+2024-09-20 11:20:05,200 - INFO - validate_address() called
+2024-09-20 11:20:05,201 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:20:05,201 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:20:07,751 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:20:07,761 - INFO - check_connection() : configuration successful
+2024-09-20 11:21:31,889 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:21:31,890 - INFO - dhcpcd config object created
+2024-09-20 11:21:31,890 - INFO - validate_address() called
+2024-09-20 11:21:31,890 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:21:31,891 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:21:34,314 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:21:34,324 - INFO - check_connection() : configuration successful
+2024-09-20 11:26:19,466 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:26:19,468 - INFO - dhcpcd config object created
+2024-09-20 11:26:19,469 - INFO - validate_address() called
+2024-09-20 11:26:19,470 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:26:19,471 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:26:21,981 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:26:21,990 - INFO - check_connection() : configuration successful
+2024-09-20 11:29:15,662 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:29:15,664 - INFO - dhcpcd config object created
+2024-09-20 11:29:15,665 - INFO - validate_address() called
+2024-09-20 11:29:15,667 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:29:15,668 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:29:18,149 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:29:18,161 - INFO - check_connection() : configuration successful
+2024-09-20 11:30:59,447 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:30:59,448 - INFO - dhcpcd config object created
+2024-09-20 11:30:59,448 - INFO - validate_address() called
+2024-09-20 11:30:59,448 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:30:59,449 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:31:01,905 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:31:01,925 - INFO - check_connection() : configuration successful
+2024-09-20 11:31:29,357 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:31:29,358 - INFO - dhcpcd config object created
+2024-09-20 11:31:29,359 - INFO - validate_address() called
+2024-09-20 11:31:29,360 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:31:29,360 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:31:31,838 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:31:31,850 - INFO - check_connection() : configuration successful
+2024-09-20 11:32:11,341 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:32:11,341 - INFO - dhcpcd config object created
+2024-09-20 11:32:11,342 - INFO - validate_address() called
+2024-09-20 11:32:11,343 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:32:11,343 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:32:13,766 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:32:13,778 - INFO - check_connection() : configuration successful
+2024-09-20 11:32:55,180 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:32:55,181 - INFO - dhcpcd config object created
+2024-09-20 11:32:55,181 - INFO - validate_address() called
+2024-09-20 11:32:55,182 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:32:55,182 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:32:57,617 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:32:57,631 - INFO - check_connection() : configuration successful
+2024-09-20 11:33:34,142 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:33:34,143 - INFO - dhcpcd config object created
+2024-09-20 11:33:34,144 - INFO - validate_address() called
+2024-09-20 11:33:34,145 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:33:34,145 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:33:36,569 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:33:36,583 - INFO - check_connection() : configuration successful
+2024-09-20 11:33:44,613 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:33:44,623 - INFO - dhcpcd config object created
+2024-09-20 11:33:44,624 - INFO - validate_address() called
+2024-09-20 11:33:44,626 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:33:44,627 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:33:47,122 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:33:47,135 - INFO - check_connection() : configuration successful
+2024-09-20 11:36:25,272 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 11:36:25,273 - INFO - dhcpcd config object created
+2024-09-20 11:36:25,273 - INFO - validate_address() called
+2024-09-20 11:36:25,274 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 11:36:25,274 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 11:36:27,684 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 11:36:27,701 - INFO - check_connection() : configuration successful
+2024-09-20 13:12:47,373 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 13:12:47,374 - INFO - dhcpcd config object created
+2024-09-20 13:12:47,374 - INFO - validate_address() called
+2024-09-20 13:12:47,375 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 13:12:47,375 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 13:12:49,781 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 13:12:49,791 - INFO - check_connection() : configuration successful
+2024-09-20 13:13:53,150 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 13:13:53,151 - INFO - dhcpcd config object created
+2024-09-20 13:13:53,151 - INFO - validate_address() called
+2024-09-20 13:13:53,152 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 13:13:53,152 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 13:13:55,644 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 13:13:55,657 - INFO - check_connection() : configuration successful
+2024-09-20 13:14:33,907 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 13:14:33,909 - INFO - dhcpcd config object created
+2024-09-20 13:14:33,910 - INFO - validate_address() called
+2024-09-20 13:14:33,911 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 13:14:33,912 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 13:14:36,421 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 13:14:36,432 - INFO - check_connection() : configuration successful
+2024-09-20 13:15:08,914 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 13:15:08,915 - INFO - dhcpcd config object created
+2024-09-20 13:15:08,916 - INFO - validate_address() called
+2024-09-20 13:15:08,917 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 13:15:08,917 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 13:15:11,323 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 13:15:11,343 - INFO - check_connection() : configuration successful
+2024-09-20 13:15:27,988 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 13:15:27,989 - INFO - dhcpcd config object created
+2024-09-20 13:15:27,989 - INFO - validate_address() called
+2024-09-20 13:15:27,990 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 13:15:27,990 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 13:15:30,448 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 13:15:30,464 - INFO - check_connection() : configuration successful
+2024-09-20 13:17:02,656 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 13:17:02,657 - INFO - dhcpcd config object created
+2024-09-20 13:17:02,658 - INFO - validate_address() called
+2024-09-20 13:17:02,659 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 13:17:02,659 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 13:17:05,256 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 13:17:05,267 - INFO - check_connection() : configuration successful
+2024-09-20 14:10:38,358 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 14:10:38,359 - INFO - dhcpcd config object created
+2024-09-20 14:10:38,359 - INFO - validate_address() called
+2024-09-20 14:10:38,360 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 14:10:38,360 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 14:10:40,761 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 14:10:40,771 - INFO - check_connection() : configuration successful
+2024-09-20 15:43:16,593 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 15:43:16,596 - INFO - dhcpcd config object created
+2024-09-20 15:43:16,596 - INFO - validate_address() called
+2024-09-20 15:43:16,597 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 15:43:16,598 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 15:43:19,011 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 15:43:19,034 - INFO - check_connection() : configuration successful
+2024-09-20 15:51:36,587 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 15:51:36,588 - INFO - dhcpcd config object created
+2024-09-20 15:51:36,588 - INFO - validate_address() called
+2024-09-20 15:51:36,589 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 15:51:36,589 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 15:51:39,082 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 15:51:39,093 - INFO - check_connection() : configuration successful
+2024-09-20 15:53:18,478 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 15:53:18,479 - INFO - dhcpcd config object created
+2024-09-20 15:53:18,479 - INFO - validate_address() called
+2024-09-20 15:53:18,480 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 15:53:18,480 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 15:53:20,926 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 15:53:20,943 - INFO - check_connection() : configuration successful
+2024-09-20 15:54:57,073 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 15:54:57,074 - INFO - dhcpcd config object created
+2024-09-20 15:54:57,074 - INFO - validate_address() called
+2024-09-20 15:54:57,075 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 15:54:57,075 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 15:54:59,551 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 15:54:59,564 - INFO - check_connection() : configuration successful
+2024-09-20 15:56:26,154 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 15:56:26,156 - INFO - dhcpcd config object created
+2024-09-20 15:56:26,157 - INFO - validate_address() called
+2024-09-20 15:56:26,157 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 15:56:26,158 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 15:56:28,620 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 15:56:28,634 - INFO - check_connection() : configuration successful
+2024-09-20 16:02:20,013 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 16:02:20,014 - INFO - dhcpcd config object created
+2024-09-20 16:02:20,015 - INFO - validate_address() called
+2024-09-20 16:02:20,016 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 16:02:20,016 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 16:02:22,472 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 16:02:22,484 - INFO - check_connection() : configuration successful
+2024-09-20 16:03:30,856 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 16:03:30,857 - INFO - dhcpcd config object created
+2024-09-20 16:03:30,857 - INFO - validate_address() called
+2024-09-20 16:03:30,858 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 16:03:30,858 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 16:03:33,314 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 16:03:33,333 - INFO - check_connection() : configuration failed
+2024-09-20 16:53:57,547 - INFO - Opening test_file
+2024-09-20 16:53:57,548 - ERROR - Read File(path) -> path does not exist
+2024-09-20 16:53:57,548 - INFO - dhcpcd config object created
+2024-09-20 16:53:57,549 - INFO - validate_address() called
+2024-09-20 16:55:54,870 - INFO - Opening ../src/test_file
+2024-09-20 16:55:54,872 - INFO - dhcpcd config object created
+2024-09-20 16:55:54,872 - INFO - validate_address() called
+2024-09-20 16:55:54,873 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 16:55:54,873 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 16:55:57,462 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 16:55:57,474 - INFO - check_connection() : configuration successful
+2024-09-20 16:56:48,252 - INFO - Opening ../src/test_file
+2024-09-20 16:56:48,254 - INFO - dhcpcd config object created
+2024-09-20 16:56:48,255 - INFO - validate_address() called
+2024-09-20 16:56:48,256 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 16:56:48,256 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 16:56:51,053 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 16:56:51,071 - INFO - check_connection() : configuration failed
+2024-09-20 17:08:55,344 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 17:08:55,345 - INFO - dhcpcd config object created
+2024-09-20 17:08:55,345 - INFO - validate_address() called
+2024-09-20 17:08:55,346 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 17:08:55,346 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 17:08:58,159 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 17:08:58,173 - INFO - check_connection() : configuration failed
+2024-09-20 17:09:59,213 - INFO - Opening /etc/dhcpcd.conf
+2024-09-20 17:09:59,215 - INFO - dhcpcd config object created
+2024-09-20 17:09:59,215 - INFO - validate_address() called
+2024-09-20 17:09:59,216 - INFO - replace_address(self) : validation and replacement successful
+2024-09-20 17:09:59,217 - INFO - writeTofile(self, path) : write to dhcpcd file started
+2024-09-20 17:10:01,767 - INFO - restart_dhcpcd(self) : restart successful
+2024-09-20 17:10:01,783 - INFO - check_connection() : configuration failed

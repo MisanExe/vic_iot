@@ -11,29 +11,39 @@ def Auth_ssid(input_ssid)->int:
 	#start subprocess to  get ssid
 	try:
 		ret = subprocess.run(['sudo', 'iwlist' , 'wlan0','scan'], capture_output=True, text=True)
-		for line in ret.stdout.splitlines():
-			if input_ssid in line:
-				return VALID_SSID
+		if input_ssid in ret.stdout:
+			return VALID_SSID
 	except Exception as e:
 		return PROCESS_ERROR
 	return INVALID_SSID
 
 
 def main():
+	
 
 	if len(sys.argv) < 1:
 		print(FEW_ARGS)
-		return
+		sys.exit(PROCESS_ERROR)
 
-		
-	user_input =  sys.argv[1] 
+	
+	try:	
+		user_input =  sys.argv[1] 
+	except Exception as e:
+		print("PROCESS ERROR")
+		exit(PROCESS_ERROR)
+
 
 	res = Auth_ssid(user_input) 
 	if  res == VALID_SSID:
+		print("VALID SSID")
 		sys.exit(VALID_SSID)
+
 	elif res == INVALID_SSID:
+		print("INVALID SSID")
 		sys.exit(INVALID_SSID)
+		
 	elif res == PROCESS_ERROR:
+		print("PROCESS ERROR")
 		sys.exit(PROCESS_ERROR)
 
 

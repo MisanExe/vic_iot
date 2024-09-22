@@ -16,3 +16,9 @@ class IPv4_AddressInvalid(NetworkObjError):
         self.value = value
         self.msg = message
         super().__init__(self.msg)
+
+class SubprocessFailed(NetworkObjError):
+    def __init__(self, value, message) -> None:
+        self.value = value
+        self.message = message
+        super().__init__(self.msg)

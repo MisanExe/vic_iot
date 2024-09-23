@@ -129,7 +129,7 @@ class NetWorkMangerObj:
                     self.restart_network_manager()
                     time.sleep(4)
                     #check current ip address
-                    if self._check_wireless_ip_connection(new_add):
+                    if self._check_wireless_ip_connection(new_add,web=True):
                         #set status
                         self.response.status = 'success'
                         #construct response
@@ -293,10 +293,13 @@ class NetWorkMangerObj:
             Parameters:
                 new_conf : (list) new configuration 
                 path : (str). Defaults for a file in the source folder
+            
+            Returns:
+                bool (failed or success)
         """
          #check if size is ok
         if len(self.Conf_file) >= len(new_conf):
-            print("ok")
+        
             try:
                 with open(path, 'w') as conf_file:
                     for line in new_conf:
@@ -309,58 +312,93 @@ class NetWorkMangerObj:
                 return True
             except Exception as e:
                 print(f"Error {e}")
+                logging.error("Error : write_to_conf() as {e}")
                 self.response.errors.append(f"Error : {e}")
                 return False
         else :
-            self.response.errors.append(f"Error : [write_to_conf(self, new_conf, path='../test_file')] new_conf list is bogus")
+            logging.error(f"Error : [write_to_conf()] new_conf list is bogus")
+            self.response.errors.append(f"Error : [write_to_conf()] new_conf list is bogus")
             return False
         
+
+        
     def restart_network_manager(self)->bool:
+
+        logging.info("restart_network_manager() called ")
+
         try:
             ret = subprocess.run("sudo systemctl restart NetworkManager", capture_output=True, text=True, shell=True)
             if ret.returncode == 0:
-                print(f"return code : {ret.returncode} , restarted network manager")
+                logging.debug(f"restart_network_manager() restarted network manager successfully")
                 return True
             else :
                 if self.restart_network_manager():
+                    logging.debug(f"restart_network_manager() restarted network manager successfully")
                     return True
                 else :
+                    logging.error(f"Error : [restart_network_manager()] Unable to complete restart")
                     self.response.errors.append(f"Error : [restart_network_manager()] Unable to complete restart")
                     return False
         except Exception as e:
             self.response.errors.append(f"Error : [restart_network_manager()] {e}")
-            print(f"Error : {e}")
+            logging.error(f"Error : [restart_network_manager()] {e}")
+
 
 
     def _check_wireless_ip_connection(self, new_addr, web=False, packets=2)->bool:
 
+        logging.info("check_wireless_ip_connection() called ")
         try:
             ret = None
             if not web :
-                
+                logging.debug(f"check_wireless_ip_connection() called with web : {web}")
                 ret = subprocess.run(f"ping -c {packets} {new_addr}", capture_output=True, text=True, shell=True)
             else :
+                logging.debug(f"check_wireless_ip_connection() called with web : {web}")
                 ret = subprocess.run(f"ping -c {packets} google.com", capture_output=True, text=True, shell=True)
-                pass
+                
 
             if ret.returncode == 0 :
+                logging.debug(f"check_wireless_ip_connection() called with web : {web}. output : {ret.stdout}")
                 print(f"new address is active {ret.stdout}")
                 return True
             else :
-                print(f"new address is inactive. return code {ret.returncode}\nstd error : {ret.stderr}\nstd out : {ret.stdout} , {ret.args}")
-                #print("os failed too")
+                logging.error(f"check_wireless_ip_connection() called with web : {web}. Error {ret.stderr}")
+                self.response.errors.append(f"check_wirelsess_ip_connection() {ret.stderr}")
                 return False
             
         except Exception as e:
             print(f"Error: {e}")
+            logging.error(f"check_wireless_ip_connection() called with web : {web}. Error {e}")
             self.response.errors.append(f"Error : {e}")
             return False
     
 
         
-                
+    def _restore_settings(self)->bool:
+        logging.info("restore_settings(self) called")
 
-          
+        try:
+            self._write_to_conf(self.temp_file, self.Conf_file_path)
+        except Exception as e:
+
+            logging.error(f"restore_settings(self) {e}")
+            self.response.errors.append(f"Error : {e}")
+            return False
+    
+        #restart network manager
+        if self.restart_network_manager() :
+            return True
+        else :
+            time.sleep(2)
+            if self.restart_network_manager():
+                return True
+            else :
+                logging.debug(f"restore_settings(self) failed to restire and restart network manager")
+                self.response.errors.append(f"Error : [restore_settings()] failed to restore and restart network manager")
+                return False
+
+
            
 
 def find(needle, haystack)->int:

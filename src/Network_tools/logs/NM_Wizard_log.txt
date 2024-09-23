@@ -1,0 +1,10 @@
+2024-09-22 21:53:38,299 - INFO - check_wireless_ip_connection() called 
+2024-09-22 21:53:38,300 - DEBUG - check_wireless_ip_connection() called with web : True
+2024-09-22 21:53:39,373 - DEBUG - check_wireless_ip_connection() called with web : True. output : PING google.com (142.251.41.46) 56(84) bytes of data.
+64 bytes from yyz12s08-in-f14.1e100.net (142.251.41.46): icmp_seq=1 ttl=115 time=10.9 ms
+64 bytes from yyz12s08-in-f14.1e100.net (142.251.41.46): icmp_seq=2 ttl=115 time=12.4 ms
+
+--- google.com ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 10.870/11.639/12.408/0.769 ms
+

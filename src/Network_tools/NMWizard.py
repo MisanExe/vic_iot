@@ -2,6 +2,7 @@
 from NManager import NetWorkMangerObj
 import logging
 import time
+import subprocess
 
 def main():
     
@@ -11,14 +12,16 @@ def main():
 
     #logging
     logging.basicConfig(level=logging.DEBUG, filename='logs/NM_Wizard_log.txt',format='%(asctime)s - %(levelname)s - %(message)s')
+
     wizard = NetWorkMangerObj()
     try :
-        if wizard.set_new_address('192.168.2.17') :
+        if wizard.set_new_address('192.168.2.34') :
             print(wizard.response.get_response())
         else :
             print(f"Response :\n {wizard.response.get_response()}")
-
+        
     except Exception as e:
+        logging.error(f"Error : main() {e}")
         print(f"Error : {e}")
 
 

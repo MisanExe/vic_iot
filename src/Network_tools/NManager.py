@@ -4,6 +4,8 @@ import re
 from scapy.all import ARP, Ether, srp
 import logging
 from NM_wizard_res import response
+import os
+import time
 
 
 
@@ -15,9 +17,12 @@ class NetWorkMangerObj:
         self.Nm_present = self._isInstalled()
         #check if net manager exists
         if not self.Nm_present:
-            raise NM_except.NetworkManagerNotInstalled("Error : Unable to create object")
+            raise NM_except.NetworkManagerNotInstalled("Error : __init__() Unable to create object")
         #get current ssid
         self.ssid = self._get_ssid().strip()
+        if self.ssid =='':
+            raise NM_except.UnableToRetrive_SSID("Error : __init__() unable to retrive SSID")
+        
         #construct connection config path
         self.Conf_file_path= self.Conf_file_path+self.ssid+'.nmconnection'
 
@@ -40,9 +45,6 @@ class NetWorkMangerObj:
         
 
 
-        
-
-
     def _isInstalled(self)->bool:
         alias = 'network-manager'
         try:
@@ -54,8 +56,10 @@ class NetWorkMangerObj:
         except Exception as e :
             print(f"Error failed {e}")
             return False
-        
+    
         return False
+    
+
     
     def _get_ssid(self)->str:
         try:
@@ -123,8 +127,9 @@ class NetWorkMangerObj:
                 if self._write_to_conf(new_conf, self.Conf_file_path) :
                     #restart network manager
                     self.restart_network_manager()
+                    time.sleep(4)
                     #check current ip address
-                    if self._check_wireless_ip(new_add):
+                    if self._check_wireless_ip_connection(new_add):
                         #set status
                         self.response.status = 'success'
                         #construct response
@@ -317,23 +322,38 @@ class NetWorkMangerObj:
                 print(f"return code : {ret.returncode} , restarted network manager")
                 return True
             else :
-                print("failed to restart")
-                return False
+                if self.restart_network_manager():
+                    return True
+                else :
+                    self.response.errors.append(f"Error : [restart_network_manager()] Unable to complete restart")
+                    return False
         except Exception as e:
+            self.response.errors.append(f"Error : [restart_network_manager()] {e}")
             print(f"Error : {e}")
 
 
-    def _check_wireless_ip(self, new_addr)->bool:
+    def _check_wireless_ip_connection(self, new_addr, web=False, packets=2)->bool:
+
         try:
-            ret = subprocess.run("nmcli device show wlan0 | grep IP4.ADDRESS", capture_output=True, text=True, shell=True)
-            if new_addr in ret.stdout:
-                print(f"return code : {ret.stdout} , restarted network manager")
+            ret = None
+            if not web :
+                
+                ret = subprocess.run(f"ping -c {packets} {new_addr}", capture_output=True, text=True, shell=True)
+            else :
+                ret = subprocess.run(f"ping -c {packets} google.com", capture_output=True, text=True, shell=True)
+                pass
+
+            if ret.returncode == 0 :
+                print(f"new address is active {ret.stdout}")
                 return True
             else :
-                print("failed to restart")
+                print(f"new address is inactive. return code {ret.returncode}\nstd error : {ret.stderr}\nstd out : {ret.stdout} , {ret.args}")
+                #print("os failed too")
                 return False
+            
         except Exception as e:
-            print(f"Error : {e}")
+            print(f"Error: {e}")
+            self.response.errors.append(f"Error : {e}")
             return False
     
 

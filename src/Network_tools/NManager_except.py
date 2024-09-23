@@ -22,3 +22,9 @@ class SubprocessFailed(NetworkObjError):
         self.value = value
         self.message = message
         super().__init__(self.msg)
+
+class UnableToRetrive_SSID(NetworkObjError):
+    def __init__(self, value, message) -> None:
+        self.value = value
+        self.message = message
+        super().__init__(self.msg)
